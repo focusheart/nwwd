@@ -1,6 +1,14 @@
-{% extends "_base.html" %}
+{% extends "_layout.html" %}
 {% block title %}{{ _("Main %s" % params['title']) }}{% end %}
 {% block body %}
-<h1>Welcome</h1>
-<p>It's just a page</p>
+<section class="row" id="grid">
+    <div class="col_16 col" style="margin-top:15px;">
+    	<div class="row">
+        <p>ok, image goes here?</p>
+        </div><!-- row -->
+    </div><!-- col_16 -->
+</section><!-- row -->
+<footer class="row">
+	<div class="col_16 col">all rights reserved &copy; <a href="http://www.nwwd.cc">NWWD</a></div>
+</footer>
 {% end %}

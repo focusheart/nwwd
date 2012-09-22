@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>{{ _("NWWD") }} {% block title %}{% end %}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="zh-cn" />
+    <script src="{{ static_url('js/modernizr-1.7.min.js') }}"></script>
+    <link rel="stylesheet" href="{{ static_url("css/reset.css") }}" type="text/css"/>
+    <link rel="stylesheet" href="{{ static_url("css/css3.css") }}" type="text/css"/>
+    <link rel="stylesheet" href="{{ static_url("css/general.css") }}" type="text/css"/>
+    <link rel="stylesheet" href="{{ static_url("css/grid.css") }}" type="text/css"/>
+    <link rel="stylesheet" href="{{ static_url("css/jquery-ui-1.8.23.custom.css") }}" type="text/css"/>
+    <script src="{{ static_url('js/jquery-1.8.0.min.js') }}"></script>
+    <script src="{{ static_url('js/jquery-ui-1.8.23.custom.min.js') }}"></script>
+    <style>
+        header {padding-top:25px; border-bottom:1px solid #ccc; padding-bottom:20px;}
+        header .logo {font-size:3.52em;}
+        header nav ul li {float:left; margin-top:12px;}
+        header nav ul li a {display:block; padding:5px 15px; border-right:1px solid #eee; font-size:1.52em; font-family:Georgia, "Times New Roman", Times, serif; text-decoration:none;}
+        header nav ul li a:hover {background-color:#eee; border-right:1px solid #ccc; text-shadow:-1px -1px 0px #fff;}
+        header nav ul li.last a {border-right:none;}
+        #css3 div > div {margin:0px 0px 50px 0px; padding:6px; border:1px solid #eee;}
+		#grid div > .col {border-bottom:1px solid #ccc; padding:10px 0px; outline:1px solid #eee;}
+		h2 {border-bottom:1px dashed #ccc; margin-top:15px;}		
+		.documentation {display:block; background-color:#eee; padding:6px 13px; font-family:Georgia, "Times New Roman", Times, serif; color:#666; text-align:right; text-shadow:-1px -1px 0px #fff;}
+		footer {text-align:center; color:#666; font-size:0.9em; padding:4px 0px;}
+    </style>
+</head>
+<body>
+<div class="row">
+    <header>
+        <div class="logo col_7 col">{{ _('NWWD!') }}</div><!-- logo col_7 -->
+        <nav class="col_9 col">
+        	<ul>
+            	<li><a href="#navigation">{{ _('About NWWD') }}</a></li>
+                <li><a href="#navigation">{{ _('FAQ') }}</a></li>
+            	<li class="last"><a href="http://www.enavu.com">{{ _('Contact us') }}</a></li>
+            </ul>
+        </nav><!-- nav col_9 -->
+        <div class="clear"></div><!-- clear -->
+    </header>
+</div><!-- row -->
+{% block body %}
+{% end %}
+</body>
+</html>
